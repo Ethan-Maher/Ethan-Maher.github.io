@@ -13,6 +13,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 /* Header styles */
@@ -43,6 +46,7 @@ nav ul li a {
 
 /* Main section styles */
 section {
+    flex: 1; /* Grow to fill remaining space */
     padding: 50px 20px;
 }
 
@@ -106,4 +110,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    flex-shrink: 0; /* Ensure footer does not shrink */
 }
